@@ -133,6 +133,10 @@ ol li a:hover,
 ul li a:hover {
   color: #0008ff;
 }
+.flexbox-class{
+  display:flex;
+  flex-direction:column;
+}
 .container {
   width: 90%;
   height: 105%;
@@ -189,8 +193,7 @@ ul li a:hover {
 }
 .container-2 .middle-section {
   font-size: 4rem;
-  display: flex;
-  flex-direction: column;
+  .flexbox();
   justify-content: space-between;
   margin-right: 25%;
 }
@@ -219,6 +222,7 @@ ul li a:hover {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  width: 1000px;
 }
 .container-2 .middle-content1 li {
   border: 0.1rem solid;
@@ -371,4 +375,88 @@ table {
 html,
 body {
   height: 100%;
+}
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container{
+    width:90%;
+   height: 100%;
+  }
+  .container .caption{
+    font-size:2rem;
+  }
+  .container .caption-2 p{
+    font-size: 1rem;
+   }
+
+.container .caption-3 p{
+font-size: 1rem;
+margin-top:-10%;
+width:100%;
+}
+
+.caption-3 a{
+  margin:10%;
+  display:flex;
+  justify-content:center;
+}
+  .container-2 {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .container-2 .middle-section {
+    font-size: 2rem;
+    display: flex;
+    margin-left:10%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25%;
+  }
+  .container-2 .middle-section a {
+    font-size: 1rem;
+    margin-bottom: 0%;
+    margin-left:0%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-2 .middle-content {
+    font-size: 4rem;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .container-2 .middle-content p {
+    font-size: 4rem;
+    display: flex;
+    align-items: baseline;
+  }
+  .container-2 .middle-content1 {
+    font-size: 2rem;
+    margin-right: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 1000px;
+  }
+  .Contact {
+    font-size: 1rem;
+  }
+  .container-2 .middle-content1 li {
+    border: 0.1rem solid;
+    border-top: 0.1rem solid;
+    border-bottom: 1px solid;
+    border-right: 0.1rem solid;
+    flex-grow: 10;
+    list-style: none;
+    width: 100%;
+    font-size: 1rem;
+  
 }

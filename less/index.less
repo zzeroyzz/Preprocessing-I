@@ -120,6 +120,10 @@ body {
   display:flex;
   align-items:baseline;
 }
+.flexbox-class{
+  display:flex;
+  flex-direction:column;
+}
 ol,
 ul {
   display: flex;
@@ -138,7 +142,7 @@ ul {
     &:hover {
       color: #0008ff;
     }
-  }
+  } 
 }
 .container {
   width: 90%;
@@ -200,8 +204,7 @@ ul {
 
   .middle-section {
     font-size: @font-size * 4;
-    display: flex;
-    flex-direction: column;
+    .flexbox-class();
     justify-content: space-between;
     margin-right: @margin * 5%;
 
@@ -233,6 +236,8 @@ ul {
          display:flex;
          justify-content:flex-start;
          flex-direction:column;
+         border:2px red solid;
+         width:1000px;
          
          li{
         border: 0.1rem solid;
@@ -402,5 +407,15 @@ blockquote,
     height: 100%;
   }
 @media (max-width: 500px) {
-  
-}
+  .container {
+    width: 1000%;
+    height: 105%;
+    border: 5px solid;
+    margin: 100%;
+    margin-left: @margin *10;
+    padding: 55%;
+    background-color: #ffa98f;
+
+    .caption{
+      margin-left: 55%;
+    }
