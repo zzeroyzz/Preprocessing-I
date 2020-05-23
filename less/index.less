@@ -219,8 +219,7 @@ ul {
   .middle-content {
     font-size: @font-size * 4;
     margin-right: @margin * 0%;
-    display: flex;
-    flex-direction: column;
+    .flexbox-class();
     justify-content: space-between;
     list-style: none;
 
@@ -406,16 +405,88 @@ blockquote,
   body {
     height: 100%;
   }
-@media (max-width: 500px) {
-  .container {
-    width: 1000%;
-    height: 105%;
-    border: 5px solid;
-    margin: 100%;
-    margin-left: @margin *10;
-    padding: 55%;
-    background-color: #ffa98f;
+@media (max-width: 500px){
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container{
+    width:90%;
+   height: 100%;
+  }
+  .container .caption{
+    font-size:2rem;
+  }
+  .container .caption-2 p{
+    font-size: 1rem;
+   }
 
-    .caption{
-      margin-left: 55%;
-    }
+.container .caption-3 p{
+font-size: 1rem;
+margin-top:-10%;
+width:100%;
+}
+
+.caption-3 a{
+  margin:10%;
+  display:flex;
+  justify-content:center;
+}
+  .container-2 {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .container-2 .middle-section {
+    font-size: 2rem;
+    display: flex;
+    margin-left:10%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25%;
+  }
+  .container-2 .middle-section a {
+    font-size: 1rem;
+    margin-bottom: 0%;
+    margin-left:0%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-2 .middle-content {
+    font-size: 4rem;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .container-2 .middle-content p {
+    font-size: 4rem;
+    display: flex;
+    align-items: baseline;
+  }
+  .container-2 .middle-content1 {
+    font-size: 2rem;
+    margin-right: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 1000px;
+  }
+  .Contact {
+    font-size: 1rem;
+  }
+  .container-2 .middle-content1 li {
+    border: 0.1rem solid;
+    border-top: 0.1rem solid;
+    border-bottom: 1px solid;
+    border-right: 0.1rem solid;
+    flex-grow: 10;
+    list-style: none;
+    width: 100%;
+    font-size: 1rem;
+  
+}
+}
